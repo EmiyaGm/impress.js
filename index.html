@@ -67,7 +67,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=1024" />
     <meta name="apple-mobile-web-app-capable" content="yes" />
-    <title>impress.js | presentation tool based on the power of CSS3 transforms and transitions in modern browsers | by Bartek Szopka @bartaz</title>
+    <title>基于百度贴吧的大学生兴趣度分析 | by 龚旻 @EmiyaGm</title>
     
     <meta name="description" content="impress.js is a presentation tool based on the power of CSS3 transforms and transitions in modern browsers and inspired by the idea behind prezi.com." />
     <meta name="author" content="Bartek Szopka" />
@@ -93,6 +93,15 @@
     
     <link rel="shortcut icon" href="favicon.png" />
     <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <style>
+        ul > li{
+            margin-top: 20px;
+        }
+        h1{
+            color: dodgerblue;
+            font-size: 50px;
+        }
+    </style>
 </head>
 
 <!--
@@ -163,8 +172,12 @@
         It will not be rotated or scaled.
         
     -->
-    <div id="bored" class="step slide" data-x="-1000" data-y="-1500">
-        <q>Aren’t you just <b>bored</b> with all those slides-based presentations?</q>
+    <div id="bored" class="step slide" data-x="-1000" data-y="-1500" style="text-align: center">
+        <img src="img/百度贴吧.jpg" style="width: 30%">
+        <h1>基于百度贴吧的大学生兴趣度分析</h1>
+        <p style="margin-top: 20%;margin-left: 50%">学号：092113104</p>
+        <p style="margin-left: 50%">姓名：龚旻</p>
+        <p style="margin-left: 50%">指导教师：沈健</p>
     </div>
 
     <!--
@@ -183,11 +196,37 @@
         
     -->
     <div class="step slide" data-x="0" data-y="-1500">
-        <q>Don’t you think that presentations given <strong>in modern browsers</strong> shouldn’t <strong>copy the limits</strong> of ‘classic’ slide decks?</q>
+        <h1>基于百度贴吧的大学生兴趣度分析</h1>
+        <ul style="margin-top: 10%">
+            <li>项目背景</li>
+            <li>研究现状</li>
+            <li>目的和意义</li>
+            <li>技术路线</li>
+            <li>系统框架</li>
+            <li>关键技术、特色与创新</li>
+            <li>总结与展望</li>
+        </ul>
     </div>
 
     <div class="step slide" data-x="1000" data-y="-1500">
-        <q>Would you like to <strong>impress your audience</strong> with <strong>stunning visualization</strong> of your talk?</q>
+        <h1>项目背景</h1>
+        <ul style="margin-top: 10%">
+            <li>网络爬虫</li>
+            <li>大数据</li>
+            <li>社交平台</li>
+            <li>学生工作</li>
+        </ul>
+    </div>
+
+    <div class="step slide" data-x="2000" data-y="-1500">
+        <h1>研究现状</h1>
+        <ul style="margin-top: 10%">
+            <li>互联网的普及</li>
+            <li>大数据的兴起</li>
+            <li>网络社交平台的繁荣</li>
+            <li>爬虫技术的完善</li>
+            <li>高校学生工作的缺失</li>
+        </ul>
     </div>
 
     <!--
@@ -201,9 +240,9 @@
         
     -->
     <div id="title" class="step" data-x="0" data-y="0" data-scale="4">
-        <span class="try">then you should try</span>
-        <h1>impress.js<sup>*</sup></h1>
-        <span class="footnote"><sup>*</sup> no rhyme intended</span>
+        <span class="try">大数据+网络社交平台</span>
+        <h1>学生工作</h1>
+        <span class="footnote">兴趣点   关注话题   流行趋势</span>
     </div>
 
     <!--
@@ -215,13 +254,16 @@
         
     -->
     <div id="its" class="step" data-x="850" data-y="3000" data-rotate="90" data-scale="5">
-        <p>It’s a <strong>presentation tool</strong> <br/>
-        inspired by the idea behind <a href="http://prezi.com">prezi.com</a> <br/>
-        and based on the <strong>power of CSS3 transforms and transitions</strong> in modern browsers.</p>
+        <p style="font-size: 25px">爬虫系统选用了基于python语言的爬虫框架<strong>Scrapy</strong> <br/>
+            数据处理方面选用了全文搜索引擎Apache Solr<br />
+        数据展示系统（Data Show System）选用了基于Spring4.0的最新框架<strong>Spring Boot</strong><br/>
+        其中整合了<strong>Spring+SpringMVC+Hibernate</strong>这三个传统的后端开发框架<br/>
+            并且对于持久层还引入了<strong>JPA规范</strong>及其开发框架<strong>Spring Data JPA</strong><br />
+        数据可视化方面选用了<strong>Echarts3</strong> JavaScript图表类库
     </div>
 
     <div id="big" class="step" data-x="3500" data-y="2100" data-rotate="180" data-scale="6">
-        <p>visualize your <b>big</b> <span class="thoughts">thoughts</span></p>
+        <img src="img/系统架构.png" style="width: 100%"/>
     </div>
 
     <!--
@@ -234,7 +276,7 @@
         
     -->
     <div id="tiny" class="step" data-x="2825" data-y="2325" data-z="-3000" data-rotate="300" data-scale="1">
-        <p>and <b>tiny</b> ideas</p>
+        <p>关键技术说明</p>
     </div>
 
     <!--
@@ -258,20 +300,32 @@
         
     -->
     <div id="ing" class="step" data-x="3500" data-y="-850" data-rotate="270" data-scale="6">
-        <p>by <b class="positioning">positioning</b>, <b class="rotating">rotating</b> and <b class="scaling">scaling</b> them on an infinite canvas</p>
+        <ul style="font-size: 31px">
+            <li>爬虫框架Scrapy</li>
+            <li>Apache Solr</li>
+            <li>Spring Boot + Spring Data JPA</li>
+            <li>Echarts3</li>
+        </ul>
     </div>
 
-    <div id="imagination" class="step" data-x="6700" data-y="-300" data-scale="6">
-        <p>the only <b>limit</b> is your <b class="imagination">imagination</b></p>
+    <div class="step slide" data-x="6000" data-y="-300">
+        <h1>爬虫框架Scrapy</h1>
+        <img src="img/Scrapy.png" style="width: 50%;margin-left: 20%;margin-top: 30px" />
+        <p>Scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架。 可以应用在包括数据挖掘，信息处理或存储历史数据等一系列的程序中。其最初是为了 页面抓取 (更确切来说, 网络抓取 )所设计的， 也可以应用在获取API所返回的数据(例如 Amazon Associates Web Services ) 或者通用的网络爬虫。</p>
+
     </div>
 
-    <div id="source" class="step" data-x="6300" data-y="2000" data-rotate="20" data-scale="4">
-        <p>want to know more?</p>
-        <q><a href="http://github.com/bartaz/impress.js">use the source</a>, Luke!</q>
+    <div class="step slide" data-x="6000" data-y="1000" data-rotate="20" >
+        <h1>Apache Solr</h1>
+        <img src="img/爬虫和Solr.jpg" style="width: 50%;margin-left: 20%;margin-top: 30px"/>\
+        <p>Solr是一个高性能，采用Java5开发，基于Lucene的全文搜索服务器。同时对其进行了扩展，提供了比Lucene更为丰富的查询语言，同时实现了可配置、可扩展并对查询性能进行了优化，并且提供了一个完善的功能管理界面，是一款非常优秀的全文搜索引擎。</p>
     </div>
 
-    <div id="one-more-thing" class="step" data-x="6000" data-y="4000" data-scale="2">
-        <p>one more thing...</p>
+    <div class="step slide" data-x="6000" data-y="2000" >
+        <h1>Spring Boot + Spring Data JPA</h1>
+        <img src="img/DSS流程.png" style="width: 50%;margin-left: 20%;"/>
+        <p style="font-size: 25px">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。</p>
+        <p style="font-size: 25px">Spring Data JPA 让一切近乎完美！Spring 对 JPA 的支持非常强大，开发者只需关心核心业务逻辑的实现代码，无需过多关注 EntityManager 的创建、事务处理等 JPA 相关的处理，这基本上也是作为一个开发框架而言所能做到的极限了。至此，开发者连仅剩的实现持久层业务逻辑的工作都省了，唯一要做的，就只是声明持久层的接口，其他都交给 Spring Data JPA 来帮你完成！</p>
     </div>
 
     <!--
@@ -286,9 +340,28 @@
         as `data-rotate` (these two are basically aliases).
         
     -->
-    <div id="its-in-3d" class="step" data-x="6200" data-y="4300" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
-        <p><span class="have">have</span> <span class="you">you</span> <span class="noticed">noticed</span> <span class="its">it’s</span> <span class="in">in</span> <b>3D<sup>*</sup></b>?</p>
-        <span class="footnote">* beat that, prezi ;)</span>
+
+    <div class="step slide" data-x="6000" data-y="3000"  data-rotate="20">
+        <h1>Echarts</h1>
+        <img src="img/词云.png" style="width: 50%;margin-left: 20%;margin-top: 30px" />
+        <p>ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。
+            ECharts 3 中更是加入了更多丰富的交互功能以及更多的可视化效果，并且对移动端做了深度的优化。</p>
+    </div>
+
+    <div class="step slide" data-x="6000" data-y="4000" >
+        <h1>总结、不足、展望</h1>
+        <p style="margin-top: 30px;font-size: 30px">本文通过介绍使用网络爬虫技术对百度大学贴吧的数据进行爬取，分析，处理，得到展现当代大学生兴趣度的有价值的数据，并且通过页面可视化技术加以呈现，在一定程度上体现了当代大学生的兴趣爱好，帮助学校更好的开展学生工作，提供更有参考价值的资料依据。对大学周围的商家来说，这数据一定程度上反映了当代大学生消费观念和消费流行趋势，为其有针对性的准备商品和服务，提供了一定的参考价值。</p>
+        <p>本文所编写的所有代码，均已开源分享到GitHub上面，供后来人借鉴、参考、交流、共同学习进步。附上项目地址：<br />
+            https://github.com/EmiyaGm/gmSearch_SpringBoot <br />
+            https://github.com/EmiyaGm/Tieba_Spider <br />
+            需要注意的是，虽然做了许多工作，但是本文任有缺陷，特别是对于重要的爬虫技术中，挖掘算法一项，并未进行深挖，而只是浮于表面的使用，希望能在今后的工作中予以修补，修正这一问题。
+        </p>
+    </div>
+
+
+    <div id="its-in-3d" class="step" data-x="6400" data-y="4600" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+        <p>到此结束，谢谢！</p>
+        <span class="footnote">* Thank you for watching，GoodBye！</span>
     </div>
 
     <!--
