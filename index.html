@@ -203,7 +203,7 @@
             <li>目的和意义</li>
             <li>技术路线</li>
             <li>系统框架</li>
-            <li>关键技术、特色与创新</li>
+            <li>关键技术</li>
             <li>总结与展望</li>
         </ul>
     </div>
@@ -308,24 +308,34 @@
         </ul>
     </div>
 
-    <div class="step slide" data-x="6000" data-y="-300">
+    <div class="step slide" data-x="6000" data-y="-1500">
         <h1>爬虫框架Scrapy</h1>
         <img src="img/Scrapy.png" style="width: 50%;margin-left: 20%;margin-top: 30px" />
-        <p>Scrapy是一个为了爬取网站数据，提取结构性数据而编写的应用框架。 可以应用在包括数据挖掘，信息处理或存储历史数据等一系列的程序中。其最初是为了 页面抓取 (更确切来说, 网络抓取 )所设计的， 也可以应用在获取API所返回的数据(例如 Amazon Associates Web Services ) 或者通用的网络爬虫。</p>
+        <ul style="font-size: 31px">
+            <li>Scrapy Engine</li>
+            <li>Spider中的name属性、start_urls属性、parse(response)方法与Selectors（构造器）</li>
+            <li>Item Pipeline的三个必须实现的方法open_item process_item close_item</li>
+        </ul>
 
     </div>
 
-    <div class="step slide" data-x="6000" data-y="1000" data-rotate="20" >
+    <div class="step slide" data-x="6000" data-y="-300" data-rotate="20" >
         <h1>Apache Solr</h1>
-        <img src="img/爬虫和Solr.jpg" style="width: 50%;margin-left: 20%;margin-top: 30px"/>\
+        <img src="img/爬虫和Solr.jpg" style="width: 45%;margin-top: 30px" />
+        <img src="img/搜索内容页.png" style="width: 45%;margin-top: 30px;margin-bottom: 20%"/>
         <p>Solr是一个高性能，采用Java5开发，基于Lucene的全文搜索服务器。同时对其进行了扩展，提供了比Lucene更为丰富的查询语言，同时实现了可配置、可扩展并对查询性能进行了优化，并且提供了一个完善的功能管理界面，是一款非常优秀的全文搜索引擎。</p>
+        <p>以关键字为主键的反向索引</p>
+        <p>IKAnalyzer中文分词——正向迭代最细粒度切分算法</p>
     </div>
 
-    <div class="step slide" data-x="6000" data-y="2000" >
+    <div class="step slide" data-x="6000" data-y="800" >
         <h1>Spring Boot + Spring Data JPA</h1>
         <img src="img/DSS流程.png" style="width: 50%;margin-left: 20%;"/>
-        <p style="font-size: 25px">Spring Boot是由Pivotal团队提供的全新框架，其设计目的是用来简化新Spring应用的初始搭建以及开发过程。该框架使用了特定的方式来进行配置，从而使开发人员不再需要定义样板化的配置。</p>
-        <p style="font-size: 25px">Spring Data JPA 让一切近乎完美！Spring 对 JPA 的支持非常强大，开发者只需关心核心业务逻辑的实现代码，无需过多关注 EntityManager 的创建、事务处理等 JPA 相关的处理，这基本上也是作为一个开发框架而言所能做到的极限了。至此，开发者连仅剩的实现持久层业务逻辑的工作都省了，唯一要做的，就只是声明持久层的接口，其他都交给 Spring Data JPA 来帮你完成！</p>
+        <ul style="font-size: 31px">
+            <li>Spring Boot使配置、部署变得简单</li>
+            <li>Spring Data JPA</li>
+            <li>Repository接口与他的子接口CrudRepository、JpaRepository</li>
+        </ul>
     </div>
 
     <!--
@@ -341,14 +351,23 @@
         
     -->
 
-    <div class="step slide" data-x="6000" data-y="3000"  data-rotate="20">
+    <div class="step slide" data-x="6000" data-y="1900"  data-rotate="20">
         <h1>Echarts</h1>
-        <img src="img/词云.png" style="width: 50%;margin-left: 20%;margin-top: 30px" />
-        <p>ECharts，一个纯 Javascript 的图表库，可以流畅的运行在 PC 和移动设备上，兼容当前绝大部分浏览器（IE8/9/10/11，Chrome，Firefox，Safari等），底层依赖轻量级的 Canvas 类库 ZRender，提供直观，生动，可交互，可高度个性化定制的数据可视化图表。
-            ECharts 3 中更是加入了更多丰富的交互功能以及更多的可视化效果，并且对移动端做了深度的优化。</p>
+        <img src="img/词云.png" style="width: 47%;margin-top: 30px" />
+        <img src="img/词云玫瑰图.png" style="width:47%;margin-top: 30px"/>
+        <img src="img/关注度前十.png" style="width:47%;margin-top: 30px"/>
+        <img src="img/大众话题统计.png" style="width: 47%;margin-top: 30px"/>
     </div>
 
-    <div class="step slide" data-x="6000" data-y="4000" >
+    <div class="step slide" data-x="6000" data-y="3000" >
+        <h1>Echarts</h1>
+        <img src="img/单个学校统计.png" style="width: 47%;margin-top: 30px" />
+        <img src="img/数码.png" style="width:47%;margin-top: 30px"/>
+        <img src="img/手机品牌.png" style="width:47%;margin-top: 30px"/>
+        <img src="img/情感分析.png" style="width: 47%;margin-top: 30px"/>
+    </div>
+
+    <div class="step slide" data-x="6000" data-y="4000" data-rotate="20">
         <h1>总结、不足、展望</h1>
         <p style="margin-top: 30px;font-size: 30px">本文通过介绍使用网络爬虫技术对百度大学贴吧的数据进行爬取，分析，处理，得到展现当代大学生兴趣度的有价值的数据，并且通过页面可视化技术加以呈现，在一定程度上体现了当代大学生的兴趣爱好，帮助学校更好的开展学生工作，提供更有参考价值的资料依据。对大学周围的商家来说，这数据一定程度上反映了当代大学生消费观念和消费流行趋势，为其有针对性的准备商品和服务，提供了一定的参考价值。</p>
         <p>本文所编写的所有代码，均已开源分享到GitHub上面，供后来人借鉴、参考、交流、共同学习进步。附上项目地址：<br />
