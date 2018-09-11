@@ -313,16 +313,27 @@
         <h1>Bootstrap 3 和 Bootstrap 4</h1>
         <br />
         <p>
-                1、Bootsrap4 css文件减少了40%以上<br />
-                2、从 Less 迁移到 Sass<br />
-                3、重要：支持选择弹性盒模型（flexbox），只要修改一个Boolean变量，就可以利用flexbox的优势快速布局<br />
-                4、不再支持IE8以及IOS 6，使用rem和em单位<br />
-                5、使用ES6重写所有JavaScript插件<br />
+            v3和v4之间的差别就比较大了，除了基本的类的调整外，整个Bootstrap4的底层css使用sass进行了重写，从原来的Less迁移到Sass，这就使得编译打包之后的bootstrap.css比之前文件大小减少了40%，大大加快了加载速度。<br />
+            并且栅格系统等组件只使用 flexbox 来构建而非之前那样根据 $enable-flex 变量而定，这就导致了一个重大的浏览器兼容上的问题，Bootstrap4的布局将不兼容IE9及其以下版本，同时也不再支持IOS 6。<br />
+            并且为了更好的适配移动端，更好的提供响应式布局，使用rem和em代替px单位。
         </p>
     </div>
 
     <div class="step slide" data-x="6000" data-y="800" >
         <h1>兼容性详谈</h1>
+        <br />
+        <p>
+            Bootstrap2中， 对于低版本浏览器的兼容都是不错的，特别是当你需要兼容IE8以下版本浏览器的时候。但是要注意一点，部分JavaScript的组件，例如进度条，当中如果依赖于CSS3的渐变、过度和动画特性的时候，这些都是不被IE7-9 或较老版本的Firefox所支持的。并且IE10和Opera 12之前的版本均不支持动画特性
+        </p>
+        <p>Bootstrap3</p>
+        <p>
+                1、移动设备支持情况
+                <img src="img/bootstrap3-mobile.png" style="width: 100%"/>
+        </p>
+        <p>
+                2、PC端支持情况
+                <img src="img/bootstrap3-pc.png" style="width: 100%"/>
+        </p>
     </div>
 
     <!--
@@ -339,23 +350,55 @@
     -->
 
     <div class="step slide" data-x="6000" data-y="1900"  data-rotate="20">
-        <h1></h1>
+        <p>
+            如上述所示，IE8 是被支持的。然而，很多 CSS3 属性和 HTML5 元素是不被支持的。
+        </p>
+        <img src="img/code2.png" style="width: 100%" />
+        <p>
+            （Media Query）和 html5标签
+        </p>
+        <img src="img/code1.png" style="width: 100%" />
+        <p>
+            其中 html5shiv.min.js 文件是让不（完全）支持html5的浏览器支持 html5 标签；respond.js 文件是让IE8实现对媒体查询（media query）的支持。
+        </p>
     </div>
 
     <div class="step slide" data-x="6000" data-y="3000" >
         <h1>响应式详谈</h1>
+        <br />
+        <p>
+            在v2中，我们需要多引入一个css文件，bootstrap-responsive.css，这点跟v3版本不同，v3将其和bootstrap.css文件打包在了一起，这样Bootstrap 会自动帮你针对不同的屏幕尺寸调整你的页面，使其在各个尺寸的屏幕上表现良好。
+        </p>
+        <p>如果你不想使用响应式布局，又不想回退至v2版本，官方也提供了禁用这一特性的方法。</p>
+        <p>
+            从v2开始确立的bootstrap的响应式设计，使用的是 Media Queries ，也就是我们所说的媒体查询。在bootstrap2中，常用的媒体尺寸主要有五种。
+        </p>
+        <img src="img/mediaquery.png"  style="width: 100%"/>
     </div>
 
-    <div class="step slide" data-x="6000" data-y="1900"  data-rotate="20">
-        <h1></h1>
+    <div class="step slide" data-x="6000" data-y="4100"  data-rotate="20">
+        <p>
+            而在v3中，bootstrap增强了对响应式的支持，其中一个重要的要点就是移动设备优先，所以他将响应式布局和栅格系统结合在一起，利用四种类前缀。
+        </p>
+        <img src="img/v3.png" style="width: 100%;"/>
+        <p>
+            并且针对性的提供了响应式工具类，使用.visible和.hidden针对不同屏幕尺寸隐藏或显示页面内容。
+        </p>
+        <p>
+            从 v3.2.0 版本起，形如 .visible-*-* 的类针对每种屏幕大小都有了三种变体，每个针对 CSS 中不同的 display 属性。
+        </p>
     </div>
 
-    <div class="step slide" data-x="6000" data-y="4000" data-rotate="20">
-        <h1>总结</h1>
+    <div class="step slide" data-x="6000" data-y="5200" data-rotate="20">
+        <p>
+            值得注意的是在v4中分为了五类。
+        </p>
+        <img src="img/v4.png" style="width: 100%;" />
+        <p>v3升级到v4的时候需要注意，大量v3中的响应式工具类被修改，增加了特大屏xl尺寸名词，并且所有尺寸名词都对应调小了一级。</p>
     </div>
 
 
-    <div id="its-in-3d" class="step" data-x="6400" data-y="4600" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
+    <div id="its-in-3d" class="step" data-x="6400" data-y="6400" data-z="-100" data-rotate-x="-40" data-rotate-y="10" data-scale="2">
         <p>到此结束，谢谢！</p>
         <span class="footnote">* Thank you for watching，GoodBye！</span>
     </div>
